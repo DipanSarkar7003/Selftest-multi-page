@@ -4,7 +4,9 @@
 
 
 
+:root{
 
+}
 
 *{
 margin: 0;
@@ -35,6 +37,9 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 25px; 
+}
+.logo:hover{
+    cursor: pointer;
 }
 .navlist{
     display:flex;
@@ -68,8 +73,22 @@ body {
     width: 30%;
 }
 .navicons img{
+box-sizing: content-box;
 width: 20px;
-/* background-color: blue; */
+background-color: rgb(187, 187, 196);
+padding: 13px;
+border-radius: 30px;
+}
+
+.navicon:hover{
+    cursor: pointer;
+    background-color: rgb(241, 161, 10);
+    scale: 0.8;
+    transition: all , 0.3s;
+}
+.threeBar{
+    width: 20px;
+    display: none;
 
 }
 .searchBar{
@@ -77,8 +96,13 @@ display: none;
 justify-content: center;
 align-items: center;
 height: 6vh;
+width: 50%;
 border-radius: 30px;
 /* padding-left: 50%; */
+.searchBar :focus{
+    border: none;
+}
+
 }
 .searchBar::placeholder{
     display: flex;
@@ -86,6 +110,223 @@ border-radius: 30px;
     color: rgb(206, 143, 26);
 }
 
+/* SECTION 1 STYLISNG STARTS HERE  */
+
+.section1{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 50vh;
+    position: relative;
+    
+}
+
+.section1P1{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    font-size: 1vw;
+}
+.section1P2{
+font-size: 3vw;
+
+}
+.boldText{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+}
+.section1P3{
+width: 40%;
+font-size: 1vw;
+}
+.smallText{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+}
+.section1Button{
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 15px;
+    width: 10%;
+    border: none;
+    border-radius: 50px;
+    background-color:rgb(241, 161, 10);
+    font-size: 1vw;
+    margin-top: 3vh;
+    cursor: pointer;
+    
+
+}
+.section1Button:active{
+    scale: 0.8;
+    transition: all , 0.2s;
+}
+
+/* SECTION 1 STYLING ENDS HERE  */
+/* SECTION 2 STYLING STARTS HERE */
+.section2{
+    display: flex;
+    gap: 5%;
+   
+}
+.section2LeftPart{
+    width: 50%;
+}
+
+/* section 2 right part  */
+.section2RightPart{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.topRightPart{
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    align-items: center;
+    position: relative;
+   
+}
+.section2TopRightLeft{
+display: flex;
+gap: 5%;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.N{
+    padding: .5vw 1vw;
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size:2vw;
+    border-radius: 50px;
+   color:rgb(241, 114, 10);
+    border: 1px solid black;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.topRightPart p {
+    font-family: 'Poppins', sans-serif;   
+    padding-right: 0;
+    
+   
+}
+.topRightPart p span {
+    color:rgb(241, 114, 10); 
+}
+.Minutes{
+text-align: right;
+font-size: 1.2vw;
+}
+
+.rightMiddlePart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10%;
+    height: 50%;
+}
+.section2rightBoldText{
+font-size: 3vw;
+}
+.section2SmallText{
+    font-size: 1vw;
+}
+/* section 2 right bottom part  */
+.section2RightBottomPart{
+    display: flex;
+    justify-content: space-between;
+}
+.section2RightBottomLeftPart{
+    display: flex;
+    gap: 10%;
+}
+.section2RightBottomLeftPart p{
+    font-family: 'Poppins', sans-serif;  
+    background-color:rgb(255, 255, 255); 
+    padding: 10px 10px;
+    border-radius: 50px;
+    text-align: center;
+    color: grey;
+    cursor:pointer;
+    
+}
+
+.readPost{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;   
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+   html {
+    background-color: aqua;
+   }
+   .section1{
+    height: 35vh;
+   }
+   .section1P1{
+    font-size:2vw;
+   }
+   .section1P2{
+    font-size:4vw;
+   }
+   .section1P3{
+    font-size:1.5vw;
+   }
+   .section1Button{
+    font-size:1.5vw;
+    padding: 20px 25px;
+    width: 15%;
+   }
+   .section2rightBoldText{
+    font-size: 2.5vw;
+   }
+
+   .section2RightBottomLeftPart p{
+    font-size: 1vw;
+   }
+   .section2SmallText{
+    /* font-size: 0.5vw; */
+   }
+  }
+
+
+@media screen and (max-width:770px){
+    html {
+        background-color: blueviolet;
+        
+    }
+.navicons img {
+    width: 15px;
+    padding: 10px;
+}
+
+.listItems{
+    /* font-size: 10px; */
+}
+
+/* .section2{
+    transition: all ease .5s;
+    flex-direction: column;
+    margin: auto;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: blue;
+} */
+
+}
 
 
 
@@ -93,25 +334,12 @@ border-radius: 30px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
 
 
 
