@@ -7,12 +7,17 @@
 :root{
 
 }
+html{
+    /* background-color: beige; */
+    position: relative;
+}
 
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 width: 100%;
+
 }
 body {
  box-sizing: border-box;
@@ -29,6 +34,7 @@ body {
     align-items: center;
     box-sizing: border-box;
     margin-top:  5vh;
+    /* position: relative; */
 }
 .logo{
     /* background-color: brown; */
@@ -36,7 +42,7 @@ body {
     width: 25%;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 25px; 
+    font-size: 35px; 
 }
 .logo:hover{
     cursor: pointer;
@@ -87,7 +93,7 @@ border-radius: 30px;
     transition: all , 0.3s;
 }
 .threeBar{
-    width: 20px;
+    width: 25px;
     display: none;
 
 }
@@ -109,11 +115,75 @@ border-radius: 30px;
     text-align: center;
     color: rgb(206, 143, 26);
 }
+/* NAVBAR STYLING ENDS HERE  */
+/* MOBILE MENU STYLING STARTS HERE  */
+.mobileMenu{
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    overflow: hidden;
+    /* background-color: aqua; */
+    text-align: center;
+    height: 100vh;
+    z-index: 89999;
+    width:300px;
+    max-width: 100%;
+    backdrop-filter: blur(12px) ;
+   animation-name:  mobileMenuOpen;
+   animation-duration: .9s;
+   /* margin-top: 10%; */
+    /* filter: grayscale(80%); */
+
+}
+@keyframes mobileMenuOpen {
+    from {width: 0px;
+      opacity:0;
+  }
+    to {width: 300px;
+  opacity:1;}
+  }
+
+.mobileMenuLogo{
+margin-bottom: 20%;
+}
+
+.mobile-Menu-Close-Button{
+    /* width: 20px; */
+    width: auto;
+/* height: auto; */
+position: absolute;
+right: 10px;
+top: 20px;
+margin-bottom: 20%;
+cursor: pointer;
+}
+
+
+.mobileMenu a{
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.mobileMenuItems:hover{
+    transform: scale(1.1);
+    background-color: rgb(250, 175, 77);
+    transition: all ease 0.2s;
+    color: aliceblue;
+    cursor: pointer;
+}
 
 /* SECTION 1 STYLISNG STARTS HERE  */
 
 .section1{
-    background-color: beige;
+    /* background-color: beige; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +191,7 @@ border-radius: 30px;
     align-items: center;
     height: 50vh;
     position: relative;
+    
     
 }
 
@@ -164,6 +235,9 @@ font-size: 1vw;
 }
 
 /* SECTION 1 STYLING ENDS HERE  */
+
+
+
 /* SECTION 2 STYLING STARTS HERE */
 .section2{
     display: flex;
@@ -271,13 +345,23 @@ font-size: 3vw;
 
 @media screen and (max-width: 1024px) {
    html {
-    background-color: aqua;
+    /* background-color: aqua; */
    }
+
+   /* NAVBAR STYLING  */
+   .listItems{
+    font-size: 1.3vw;
+   }
+   .navicons img {
+    width: 13px;
+   }
+   /* SECTION 1 STYLING  */
    .section1{
     height: 35vh;
    }
    .section1P1{
     font-size:2vw;
+
    }
    .section1P2{
     font-size:4vw;
@@ -288,48 +372,131 @@ font-size: 3vw;
    .section1Button{
     font-size:1.5vw;
     padding: 20px 25px;
-    width: 15%;
+    width: auto;
    }
+   /* SECTION 2 STYLING  */
+   
    .section2rightBoldText{
     font-size: 2.5vw;
    }
 
    .section2RightBottomLeftPart p{
-    font-size: 1vw;
+    font-size: 1.5vw;
+    width: auto;
+   }
+
+   .Minutes{
+    font-size: 1.5vw;
    }
    .section2SmallText{
-    /* font-size: 0.5vw; */
+    font-size: 1.5vw;
    }
+
   }
 
 
 @media screen and (max-width:770px){
     html {
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
         
     }
+
+    /* NAV BAR STYLING  */
 .navicons img {
     width: 15px;
     padding: 10px;
+    display: none;
+}
+.threeBar{
+    display: block;
+
 }
 
 .listItems{
     /* font-size: 10px; */
+    display: none;
 }
+/* SECTION 1 STYLING } */
 
-/* .section2{
-    transition: all ease .5s;
-    flex-direction: column;
-    margin: auto;
-    justify-content:space-evenly;
+/* SECTION 2 STYLING  */
+.readPost{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: blue;
-} */
+    width:35%;
+    font-size: 1.7VW;
+    /* background-color: blue; */
+   
+}
 
+@media screen and (max-width:576px) {
+    html{
+        /* background-color: brown; */
+    }
+    /* SECTION 1 STYLIG  */
+    .section1P1{
+        font-size: .8rem;
+    }
+    .section1P2{
+        font-size: 1.1rem;
+    }
+    .section1P3{
+        font-size: .5rem;
+    }
+    .section1Button{
+        font-size: .6rem;
+        padding: 10px 10px;
+    }
+    
+    /* SECTION 2 STYLING  */
+    .section2{
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+
+    .section2LeftPart{
+        width: 100%;
+        height: 60%;
+    }
+    .topRightPart{
+        margin-bottom: 2vh;
+    }
+    .section2RightPart{
+        width:90%;
+        height: 60%;
+    }
+    .netflixButton{
+        font-size: .8rem;
+    }
+    .Minutes{
+        font-size: .8rem;
+    }
+.section2rightBoldText{
+    font-size:1.5rem;
+}
+.section2SmallText{
+font-size: .8rem;
+}
+.section2RightBottomPart{
+    margin-top: 3vh;
+}
+.section2RightBottomLeftPart p{
+    font-size: .8rem;
+}
+.readPost{
+    font-size: .7rem;
+}
 }
 
 
-
+@media screen and (max-width:480px){
+    html{
+        /* background-color: cornflowerblue; */
+    }
+}
 
 
 

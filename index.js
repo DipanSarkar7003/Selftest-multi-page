@@ -8,7 +8,7 @@ let navList = document.querySelector('.navlist')
 let searchButton = document.getElementById('searchButton')
 let searchBar = document.querySelector('.searchBar')
 let body = document.getElementsByTagName('body')
-console.log(body)
+
 
 // ADDING EVENT TO THE SEARCH ICON 
 
@@ -36,11 +36,42 @@ else{
 }
 }
 
+// HAMBURGER NAV BAR MAKING 
+// selecting the hamburger 
+let hamBurger = document.querySelector('.threeBar') ;
+deviceWidth = window.innerWidth ;
+let hamBurgerOpen = false ;
+let mobileMenu = document.querySelector('.mobileMenu');
+let mobileMenuCloseButton =document.querySelector('#menuClose')
+console.log(mobileMenuCloseButton)
+
+
+hamBurger.addEventListener('click', openHamburger)
+
+function openHamburger (){
+    if(deviceWidth<=770 ){
+        console.log("everything is okk!")
+       mobileMenu.style.display = 'flex'
+    }
+}
+
+mobileMenuCloseButton.addEventListener('click', ()=>{
+    mobileMenu.style.display = 'none'
+})
+
+
+
+
+
+
+
+
+
+
 // transformation of the subscribe button 
 let Subscribed = false ;
 
 let SubscribeButton = document.querySelector('.section1Button')
-console.log(SubscribeButton)
 SubscribeButton.addEventListener('click', doSubScribe)
 
 function doSubScribe () {
