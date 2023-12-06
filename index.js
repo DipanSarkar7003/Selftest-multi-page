@@ -45,6 +45,8 @@ let mobileMenu = document.querySelector('.mobileMenu');
 let mobileMenuCloseButton =document.querySelector('#menuClose')
 console.log(mobileMenuCloseButton)
 
+console.log(hamBurger)
+
 
 hamBurger.addEventListener('click', openHamburger)
 
@@ -75,6 +77,7 @@ let SubscribeButton = document.querySelector('.section1Button')
 SubscribeButton.addEventListener('click', doSubScribe)
 
 function doSubScribe () {
+  
    if (Subscribed==false){
     SubscribeButton.innerHTML= 'Subscribed'
     SubscribeButton.style.backgroundColor='grey'
