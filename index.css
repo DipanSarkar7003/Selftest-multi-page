@@ -22,6 +22,7 @@ body {
     box-sizing: border-box;
     width: 90%;
     margin: auto;
+    position: relative;
 }
 
 /* NAV BAR STYLING STARTS HERE  */
@@ -485,10 +486,38 @@ font-size: 1vw;
 }
 .section3BoxRightBottomLeftPart p span {
     color:rgb(241, 114, 10) ;
-    font-weight: 500;
+    font-weight: 500;}
     
 
+/* SECTION 3 ENDS HERE  */
+.orangeButton{
+  background-color: rgb(241, 161, 10);
+    border: none;
+    border-radius: 30px;
+    font-family: poppins,sans-serif;
+    width: auto;
+    padding: 20PX 20PX ;
+    display: block;
+
 }
+.orangeButton:active{
+   transform: scale(.9);
+   transition: all .3s;
+}
+
+.preSection4Button{
+   
+    /* background-color: aqua; */
+    position: absolute;
+    right: 0;
+    display: block;
+}
+.presection4p{
+    padding-top: 10%;
+    font-family: poppins,sans-serif;
+    font-size: 2.5vw;
+}
+
 
 
 
@@ -725,7 +754,8 @@ font-size: 1vw;
             width: 80%;
             margin: auto;
             margin-top: 10%;
-            /* margin-bottom: 50%; */
+            gap: 2%;
+            margin-bottom: 70%;
         }
         
     }
