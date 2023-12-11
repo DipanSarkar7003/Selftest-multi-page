@@ -519,7 +519,61 @@ font-size: 1vw;
 }
 
 
+/* SECTION 4 STYLING STARTS HERE  */
+.section4{
+    height: auto;
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+}
 
+/* SECTION4 LEFT PART STYLING  */
+.section4LeftTextTopLeft{
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.section4LeftTextBoldText{
+    margin: 5% 0;
+    font-size: 3vw; 
+}
+.section4LeftTextSmallText{
+    font-size: 1vw;
+}
+.section4LeftTextBottomPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+.section4LeftTextBottomLeftPart{
+    display: flex;
+    display: flex;
+    gap: 10%;
+
+}
+.section4LeftTextBottomLeftPart p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3vw;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 50px;
+    text-align: center;
+    color: grey;
+    cursor: pointer;
+    background-color: brown;
+
+}
+
+.section4RightPart{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+.section4RightPartBox{
+    display: flex;
+    gap: 5%;
+}
 
 
 
