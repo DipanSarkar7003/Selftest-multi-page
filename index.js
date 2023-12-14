@@ -89,3 +89,34 @@ function doSubScribe () {
     Subscribed = false
    }
 }
+
+
+// EXPERIMENT SCROLL EFFECT 
+
+
+// console.log(window.scrollY)
+// console.log(SubscribeButton.getBoundingClientRect())
+
+
+// const div = document.getElementById('section4');
+// console.log(div)
+// const pos = div.getBoundingClientRect().top;
+
+// window.addEventListener('scroll', () => {
+//     div.getBoundingClientRect().top
+
+//   const windowPos = window.scrollY;
+//   if (windowPos >= (pos - 100)) {
+//     div.classList.add("top_In_Animation")
+//   } else {
+//     div.classList.remove("top_In_Animation")
+//   }
+  
+// });
+
+window.addEventListener('load', hidePreloader);
+
+function hidePreloader(){
+  console.log("loading")
+}
+
