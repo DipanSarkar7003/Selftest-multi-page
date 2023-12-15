@@ -21,7 +21,7 @@ html {
 
 body {
     box-sizing: border-box;
-    width: 85%;
+    width: 90%;
     margin: 0;
     padding: 0;
     margin: auto;
@@ -408,6 +408,12 @@ body {
 .presection3 {
     font-size: 2.5vw;
 }
+.presection {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5vw;
+    margin-bottom: 5%;
+}
 
 /* SECTION 3 STYLING STSRTS HERE   */
 
@@ -568,6 +574,9 @@ body {
     /* opacity: 0; */
     /* background-color: bisque; */
 }
+.section4leftPartText .topRightPart{
+   margin-top: 3%;
+}
 
 /* SECTION4 LEFT PART STYLING  */
 .section4LeftTextTopLeft {
@@ -578,7 +587,7 @@ body {
 }
 
 .section4LeftTextBoldText {
-    margin: 5% 0;
+    margin-bottom: 3%;
     font-size: 3vw;
 }
 
@@ -602,7 +611,7 @@ body {
 
 .section4LeftTextBottomLeftPart p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     background-color: rgb(255, 255, 255);
     padding: 10px 10px;
     border-radius: 50px;
@@ -651,12 +660,7 @@ body {
     width: 1vw;
 }
 
-.presection {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 2.5vw;
-    margin-bottom: 5%;
-}
+
 
 /* SECTION 4 STYLING ENDS HERE  */
 
@@ -783,6 +787,10 @@ width: 60%;
     }
 
     /* NAVBAR STYLING  */
+    .logo {
+        font-size: 33px;
+    }
+
     .listItems {
         font-size: 1.3vw;
     }
@@ -844,7 +852,10 @@ width: 60%;
     .Minutes {
         font-size: 1.5vw;
     }
-
+/* SECTION 2 STYLING ENDS HERE  */
+.presection {
+    font-size: 1.5rem;
+}
    
 
 
@@ -903,6 +914,13 @@ width: 60%;
 
     }
 
+
+
+    .preSection4Button{
+        font-size: 1.5vw;
+        padding:10px 10px ;
+    }
+
     /* SECTION 3 STYLING  */
     .section3 {
         grid-template-columns: auto auto;
@@ -929,6 +947,12 @@ width: 60%;
 
     .section3BoxRightBottomLeftPart p img {
         width: 7%;
+    }
+
+    /* SECTION4 STYLING STARTS HERE  */
+    .section4LeftTextBottomLeftPart P{
+        padding: 7PX 7PX;
+        background-color: blue;
     }
 
 }
@@ -1010,8 +1034,27 @@ width: 60%;
         font-size: .7rem;
     }
 
-    /* SECTION 3 STLING STARTS HERE  */
+/* SECTION 2 STYLING ENDS HERE  */
+.preSection4Button{
+    font-size: 1.5vw;
+    padding:10px 10px ;
+}
 
+.presection {
+    font-size: 1.3rem;
+}
+
+    /* SECTION 3 STLING STARTS HERE  */
+    .section3BoxReadPost{
+        font-size:2.5w ;
+    }
+
+    .section3BoxRightBottomLeftPart p{
+        font-size: 2vw;
+    }
+    .section3BoxRightBottomLeftPart p img{
+        width: 9%;
+    }
 
 
 }
@@ -1021,6 +1064,10 @@ width: 60%;
     html {
         background-color: cornflowerblue;
     }
+    .presection {
+        font-size: 1rem;
+    }
+      
 
     .section3 {
         grid-template-columns: auto;
