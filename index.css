@@ -22,6 +22,8 @@ html {
 body {
     box-sizing: border-box;
     width: 85%;
+    margin: 0;
+    padding: 0;
     margin: auto;
     position: relative;
 }
@@ -133,8 +135,8 @@ body {
     display: none;
     flex-direction: column;
     position: absolute;
-    right: 0;
-    top: 20px;
+    right: -5%;
+    top: 10px;
     overflow: hidden;
     /* background-color: aqua; */
     text-align: center;
@@ -171,8 +173,8 @@ body {
     width: auto;
     /* height: auto; */
     position: absolute;
-    right: 10px;
-    top: 20px;
+    right: 30px;
+    top: 10px;
     margin-bottom: 20%;
     cursor: pointer;
 }
@@ -210,24 +212,29 @@ body {
     height: 50vh;
     position: relative;
 
-    
+
 
 }
 
-.top_In_Animation{
-    animation:top_In_Animation ;
+.top_In_Animation {
+    animation: top_In_Animation;
     animation-duration: .5s;
     /* animation-delay: .3s; */
 
 }
 
 @keyframes top_In_Animation {
-    from {transform: translate( 0px ,70px);
-    opacity: .5;}
-    to {transform: translate( 0px , 0px);
-    opacity: 1;}
-    
-    
+    from {
+        transform: translate(0px, 70px);
+        opacity: .5;
+    }
+
+    to {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+
+
 }
 
 .section1P1 {
@@ -285,7 +292,7 @@ body {
     display: flex;
     gap: 5%;
     margin-bottom: 5vh;
-    
+
 
 }
 
@@ -381,6 +388,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(255, 255, 255);
     padding: 10px 10px;
+    font-size: 1.3vw;
     border-radius: 50px;
     text-align: center;
     color: grey;
@@ -411,10 +419,10 @@ body {
     gap: 5%;
     height: 200vh;
     margin-top: 10vh;
-    height:auto;
-     /* overflow: hidden;  */
-    margin-bottom: 10%; 
-    width: 100%; 
+    height: auto;
+    /* overflow: hidden;  */
+    margin-bottom: 10%;
+    width: 100%;
 
 }
 
@@ -437,6 +445,7 @@ body {
     height: auto;
     border-radius: 50px;
 }
+
 /* .Section3Box {
     display: flex;
     flex-direction: column;
@@ -444,26 +453,26 @@ body {
     align-items: center;
     font-size: 2em;
     /* color: #ffeead; */
-  
-  
 
 
 
 
-.section3BoxLeftPart img{
+
+
+.section3BoxLeftPart img {
     width: 100%;
     border-top-right-radius: 30px;
-    border-top-left-radius:30px ;
+    border-top-left-radius: 30px;
 }
 
-.section3BoxRightPart{
+.section3BoxRightPart {
     width: 100%;
     /* background-color: rgb(65, 91, 91); */
     padding-left: 5%;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     padding-bottom: 10%;
-  /* background-color: blanchedalmond; */
+    /* background-color: blanchedalmond; */
 }
 
 
@@ -476,72 +485,81 @@ body {
 
 }
 
-.section3BoxrightBoldText{
+.section3BoxrightBoldText {
     font-size: 1.5vw;
     margin-top: 5%;
     margin-bottom: 5%;
     width: 96%;
     /* color: blue; */
 }
-.section3Box_SmallText{
+
+.section3Box_SmallText {
     font-size: 1.1vw;
     margin: 5% 0;
 }
-.section3BoxReadPost{
+
+.section3BoxReadPost {
     font-family: poppins, sans-serif;
     font-weight: 700;
-    margin:  3% 0;
+    margin: 3% 0;
 }
-.section3BoxRightBottomLeftPart{
+
+.section3BoxRightBottomLeftPart {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .section3BoxRightBottomLeftPart p {
-font-weight: 500;
-font-size: 1vw;
+    font-weight: 500;
+    font-size: 1vw;
 }
+
 .section3BoxRightBottomLeftPart p img {
-    width:1vw;
+    width: 1vw;
 }
+
 .section3BoxRightBottomLeftPart p span {
-    color:rgb(241, 114, 10) ;
-    font-weight: 500;}
-    
+    color: rgb(241, 114, 10);
+    font-weight: 500;
+}
+
 
 /* SECTION 3 ENDS HERE  */
-.orangeButton{
-  background-color: rgb(241, 161, 10);
+.orangeButton {
+    background-color: rgb(241, 161, 10);
     border: none;
     border-radius: 30px;
-    font-family: poppins,sans-serif;
+    font-family: poppins, sans-serif;
     width: auto;
-    padding: 20PX 20PX ;
+    padding: 20PX 20PX;
     display: block;
 
 }
-.orangeButton:active{
-   transform: scale(.9);
-   transition: all .3s;
+
+.orangeButton:active {
+    transform: scale(.9);
+    transition: all .3s;
 }
 
-.preSection4Button{
-   
+.preSection4Button {
+
     /* background-color: aqua; */
     position: absolute;
     right: 0;
     display: block;
     color: #fff;
 }
-.presection4p{
+
+.presection4p {
     padding-top: 10%;
-    font-family: poppins,sans-serif;
+    font-family: poppins, sans-serif;
     font-size: 2.5vw;
 }
 
 
 /* SECTION 4 STYLING STARTS HERE  */
-.section4{
+.section4 {
     height: auto;
     display: flex;
     gap: 5%;
@@ -552,31 +570,36 @@ font-size: 1vw;
 }
 
 /* SECTION4 LEFT PART STYLING  */
-.section4LeftTextTopLeft{
+.section4LeftTextTopLeft {
     display: flex;
     gap: 5%;
     justify-content: space-between;
     align-items: center;
 }
-.section4LeftTextBoldText{
+
+.section4LeftTextBoldText {
     margin: 5% 0;
-    font-size: 3vw; 
+    font-size: 3vw;
 }
-.section4LeftTextSmallText{
+
+.section4LeftTextSmallText {
     font-size: 1vw;
 }
-.section4LeftTextBottomPart{
+
+.section4LeftTextBottomPart {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 5%;
 }
-.section4LeftTextBottomLeftPart{
+
+.section4LeftTextBottomLeftPart {
     display: flex;
     display: flex;
     gap: 10%;
 
 }
+
 .section4LeftTextBottomLeftPart p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3vw;
@@ -589,47 +612,167 @@ font-size: 1vw;
     /* background-color: brown; */
 
 }
+
 /* SECTION4 RIGHT PART  */
-.section4BoxImage{
+.section4BoxImage {
     height: 13vw;
     width: 24vw;
 }
 
-.section4RightPart{
+.section4RightPart {
     display: grid;
     grid-template-rows: auto auto auto auto;
     gap: 3%;
     /* height: 100%; */
 }
-.section4RightPartBox{
+
+.section4RightPartBox {
     display: flex;
     gap: 5%;
 }
-.section4BoxRightBoldText{
+
+.section4BoxRightBoldText {
     font-size: 1vw;
 }
-.section4BoxRightBottomLeftPart{
+
+.section4BoxRightBottomLeftPart {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1vw;
 }
-.section4BoxRightBottomLeftPart span{
-    color:rgb(241, 114, 10) ;
+
+.section4BoxRightBottomLeftPart span {
+    color: rgb(241, 114, 10);
     font-weight: 500;
 }
 
-.section4BoxRightBottomLeftPart img{
-    width:1vw;
+.section4BoxRightBottomLeftPart img {
+    width: 1vw;
 }
 
-.presection{
+.presection {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 2.5vw;
     margin-bottom: 5%;
 }
 
+/* SECTION 4 STYLING ENDS HERE  */
+
+/* SECTION 6 STYLING STARTS HERE  */
+.section6 {
+    width: 100vw;
+    z-index: 5;
+    margin: 0;
+    /* background-color: #f6f6f6; */
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    padding-bottom: 40%;
+    /* flex-wrap: nowrap; */
+}
+
+.section6_leftPart {
+    width: 29%;
+    /* background-color: blue; */
+}
+
+.section6_leftPart :nth-child(1) {
+    font-size: 2.5vw;
+}
+
+.section6_leftPart_2ndChild {
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin: 7% 0;
+    /* background-color: #ab3c3c; */
+}
+
+.section6_searchbar {
+    position: relative;
+    /* background-color: blueviolet; */
+    width: auto;
+    height: 3.5rem;
+    box-shadow: 1px 1px 10px ;
+    border-radius: 10px;
+}
+
+.section6_input {
+    width: 100%;
+    height: 100%;
+    /* background-color: #ab3c3c; */
+    font-size: 1vw;
+    border-radius: 10px;
+    border: none;
+    padding-left: 5%;
+    padding-bottom: 2%;
+
+    /* width: 0%; */
+    /* background-color:blue; */
+
+
+}
+
+.section6_input::placeholder {
+    font-size: 1vw;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    /* background-color: blue; */
+
+
+    /* color: #ab3c3c; */
+
+}
+
+
+
+.section6_searchbar img {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* width:2rem; */
+    height: 100%; 
+    padding: 1rem;
+    border-radius: 10px;
+    width: auto;
+    background-color: orange;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE STYLING STARTS HERE  */
+
+.section6_rightPart {
+    width: 50%;
+    height: auto;
+}
+
+.section6_rightPart .answar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30%;
+
+}
+.answar i {
+    /* font-family: poppins , sans-serif; */
+    font-size: .8vw;
+    font-weight: 900;
+}
+.section6_rightPart :nth-child(1){
+    font-family: poppins, sans-serif;
+
+}
+.answar p{
+    margin: 3% 0;
+}
+.section6_rightpart_boldtext{
+width: 60%;
+}
 
 
 
@@ -651,7 +794,9 @@ font-size: 1vw;
     /* SECTION 1 STYLING  */
     .section1 {
         height: 35vh;
+        margin-top: 8%;
     }
+  
 
     .section1P1 {
         font-size: 2vw;
@@ -676,13 +821,23 @@ font-size: 1vw;
     .section2 {
         margin-top: 10vh;
     }
+    .topRightPart{
+        margin-bottom: 3%;
+    }
 
     .section2rightBoldText {
         font-size: 2.5vw;
     }
+    .section2SmallText{
+        font-size: 1.3vw;
+    }
+
+    .section2RightBottomPart{
+        margin-top: 5%;
+    }
 
     .section2RightBottomLeftPart p {
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         width: auto;
     }
 
@@ -690,9 +845,7 @@ font-size: 1vw;
         font-size: 1.5vw;
     }
 
-    .section2SmallText {
-        font-size: 1.5vw;
-    }
+   
 
 
     /* SECTION 3 STYLING STARTS HERE  */
@@ -700,7 +853,7 @@ font-size: 1vw;
     .section3BoxRightBottomLeftPart p {
         /* font-weight: 500; */
         font-size: 1.3vw;
-        }
+    }
 
 
 
@@ -732,6 +885,7 @@ font-size: 1vw;
     }
 
     /* SECTION 1 STYLING } */
+   
 
     /* SECTION 2 STYLING  */
 
@@ -750,129 +904,140 @@ font-size: 1vw;
     }
 
     /* SECTION 3 STYLING  */
-    .section3{
+    .section3 {
         grid-template-columns: auto auto;
         transition: all ease .3ms;
         margin-bottom: 30%;
     }
+    .BoxtopRightPart p{
+        font-size:2.1vw;
+        /* color: aqua; */
+    }
+
     .section3BoxRightBottomLeftPart p {
         /* font-weight: 500; */
         font-size: 1.5vw;
-        }
-        .section3Box_SmallText{
-            font-size: 1.5vw;
-        }
-        .section3BoxrightBoldText{
-            font-size: 2.3VW;
-        }
-        .section3BoxRightBottomLeftPart p img {
-            width: 7%;
-        }
-
-}
-    @media screen and (max-width:576px) {
-        html {
-            background-color: brown;
-        }
-
-        /* SECTION 1 STYLIG  */
-        .section1P1 {
-            font-size: .8rem;
-        }
-
-        .section1P2 {
-            font-size: 1.1rem;
-        }
-
-        .section1P3 {
-            font-size: .5rem;
-        }
-
-        .section1Button {
-            font-size: .6rem;
-            padding: 10px 10px;
-        }
-
-        /* SECTION 2 STYLING  */
-        .section2 {
-            flex-direction: column;
-            width: 100%;
-            height: 100vh;
-            align-items: center;
-            margin-bottom: 9vh;
-            margin-top: 1vh;
-            /* background-color: aqua; */
-        }
-
-        .section2LeftPart {
-            width: 100%;
-            height: 60%;
-        }
-
-        .topRightPart {
-            margin-bottom: 2vh;
-        }
-
-        .section2RightPart {
-            width: 90%;
-            height: 60%;
-        }
-
-        .netflixButton {
-            font-size: .8rem;
-        }
-
-        .Minutes {
-            font-size: .8rem;
-        }
-
-        .section2rightBoldText {
-            font-size: 1.5rem;
-        }
-
-        .section2SmallText {
-            font-size: .8rem;
-        }
-
-        .section2RightBottomPart {
-            margin-top: 3vh;
-        }
-
-        .section2RightBottomLeftPart p {
-            font-size: .8rem;
-        }
-
-        .readPost {
-            font-size: .7rem;
-        }
-/* SECTION 3 STLING STARTS HERE  */
-
-
-
     }
 
+    .section3Box_SmallText {
+        font-size: 1.9vw;
+    }
 
-    @media screen and (max-width:480px) {
-        html {
-            background-color: cornflowerblue;
-        }
+    .section3BoxrightBoldText {
+        font-size: 2.5VW;
+    }
 
-        .section3{
-            grid-template-columns: auto;
-            grid-template-rows: auto auto auto auto auto auto ;
-            width: 80%;
-            margin: auto;
-            margin-top: 10%;
-            gap: 2%;
-            margin-bottom: 70%;
-        }
-        
+    .section3BoxRightBottomLeftPart p img {
+        width: 7%;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    html {
+        background-color: brown;
+    }
+
+    /* SECTION 1 STYLIG  */
+    .section1P1 {
+        font-size: .8rem;
+    }
+
+    .section1P2 {
+        font-size: 1.1rem;
+    }
+
+    .section1P3 {
+        font-size: .5rem;
+    }
+
+    .section1Button {
+        font-size: .6rem;
+        padding: 10px 10px;
+    }
+
+    /* SECTION 2 STYLING  */
+    .section2 {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        margin-bottom: 9vh;
+        margin-top: 1vh;
+        /* background-color: aqua; */
+    }
+
+    .section2LeftPart {
+        width: 100%;
+        /* height: 60%; */
+    }
+    .section2RightPart {
+        width: 100%;
+        height: 60%;
+    }
+
+    .topRightPart {
+        margin-bottom: 2vh;
     }
 
    
 
+    .netflixButton {
+        font-size: .8rem;
+    }
 
-    /* 
+    .Minutes {
+        font-size: .8rem;
+    }
+
+    .section2rightBoldText {
+        font-size: 1.5rem;
+    }
+
+    .section2SmallText {
+        font-size: .8rem;
+    }
+
+    .section2RightBottomPart {
+        margin-top: 3vh;
+    }
+
+    .section2RightBottomLeftPart p {
+        font-size: .8rem;
+    }
+
+    .readPost {
+        font-size: .7rem;
+    }
+
+    /* SECTION 3 STLING STARTS HERE  */
+
+
+
+}
+
+
+@media screen and (max-width:480px) {
+    html {
+        background-color: cornflowerblue;
+    }
+
+    .section3 {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        width: 80%;
+        margin: auto;
+        margin-top: 10%;
+        gap: 2%;
+        margin-bottom: 70%;
+    }
+
+}
+
+
+
+
+/* 
 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
