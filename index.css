@@ -32,6 +32,7 @@ body {
 
 .navbar {
     /* background-color:lavender; */
+  
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -638,6 +639,7 @@ body {
 .section4RightPartBox {
     display: flex;
     gap: 5%;
+    align-items: center;
 }
 
 .section4BoxRightBoldText {
@@ -950,10 +952,48 @@ width: 60%;
     }
 
     /* SECTION4 STYLING STARTS HERE  */
-    .section4LeftTextBottomLeftPart P{
-        padding: 7PX 7PX;
-        background-color: blue;
+    .section4{
+        display: block;
+        
+        /* margin-top: 30%; */
     }
+    .section4LeftTextBottomLeftPart{
+        width: auto;
+    }
+    .section4LeftTextBottomLeftPart P{
+        padding: 10px 17px;
+        width: auto;
+       
+    }
+    .section4LeftTextSmallText {
+        font-size: 2vw;
+    }
+    .readPost {font-size: 2vw;
+    }
+    .section4RightPart{
+        height: 30vh;
+        width: 100%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 5%;
+        margin-top: 10%;
+    }
+   
+   
+    .section3BoxReadPost{
+        font-size: 2vw;
+    }
+    .section4LeftTextBottomPart{
+        justify-content: space-between;
+        
+        /* gap: 10%; */
+    }
+
+    /* SECTION 6 STYLINFG STARTS HERE  */
+    .section6{
+        margin-top: 50%;
+    }
+  
 
 }
 
@@ -1054,6 +1094,11 @@ width: 60%;
     }
     .section3BoxRightBottomLeftPart p img{
         width: 9%;
+    }
+    .section4LeftTextBottomLeftPart P{
+        padding: 10px 17px;
+        width: auto;
+       
     }
 
 
