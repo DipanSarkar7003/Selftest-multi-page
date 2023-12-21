@@ -21,7 +21,7 @@ html {
 
 body {
     box-sizing: border-box;
-    width: 85%;
+    width: 90%;
     margin: 0;
     padding: 0;
     margin: auto;
@@ -32,6 +32,7 @@ body {
 
 .navbar {
     /* background-color:lavender; */
+  
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -408,6 +409,12 @@ body {
 .presection3 {
     font-size: 2.5vw;
 }
+.presection {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5vw;
+    margin-bottom: 5%;
+}
 
 /* SECTION 3 STYLING STSRTS HERE   */
 
@@ -568,6 +575,9 @@ body {
     /* opacity: 0; */
     /* background-color: bisque; */
 }
+.section4leftPartText .topRightPart{
+   margin-top: 3%;
+}
 
 /* SECTION4 LEFT PART STYLING  */
 .section4LeftTextTopLeft {
@@ -578,7 +588,7 @@ body {
 }
 
 .section4LeftTextBoldText {
-    margin: 5% 0;
+    margin-bottom: 3%;
     font-size: 3vw;
 }
 
@@ -602,7 +612,7 @@ body {
 
 .section4LeftTextBottomLeftPart p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     background-color: rgb(255, 255, 255);
     padding: 10px 10px;
     border-radius: 50px;
@@ -629,6 +639,7 @@ body {
 .section4RightPartBox {
     display: flex;
     gap: 5%;
+    align-items: center;
 }
 
 .section4BoxRightBoldText {
@@ -651,28 +662,19 @@ body {
     width: 1vw;
 }
 
-.presection {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 2.5vw;
-    margin-bottom: 5%;
-}
+
 
 /* SECTION 4 STYLING ENDS HERE  */
 
 /* SECTION 6 STYLING STARTS HERE  */
 .section6 {
-    width: 100vw;
-    z-index: 5;
     margin: 0;
-    /* background-color: #f6f6f6; */
     margin-top: 20%;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-
-    padding-bottom: 40%;
-    /* flex-wrap: nowrap; */
+    padding-bottom: 10%;
+ 
 }
 
 .section6_leftPart {
@@ -680,9 +682,6 @@ body {
     /* background-color: blue; */
 }
 
-.section6_leftPart :nth-child(1) {
-    font-size: 2.5vw;
-}
 
 .section6_leftPart_2ndChild {
     font-family: poppins, sans-serif;
@@ -710,10 +709,7 @@ body {
     border: none;
     padding-left: 5%;
     padding-bottom: 2%;
-
-    /* width: 0%; */
-    /* background-color:blue; */
-
+    color: green;
 
 }
 
@@ -721,6 +717,7 @@ body {
     font-size: 1vw;
     margin-bottom: 3%;
     margin-left: 5%;
+    color: green;
     /* background-color: blue; */
 
 
@@ -747,34 +744,83 @@ body {
 /* RIGHT SIDE STYLING STARTS HERE  */
 
 .section6_rightPart {
-    width: 50%;
+    width: 45%;
     height: auto;
+    
+}
+.section6_rightPart i {
+
 }
 
 .section6_rightPart .answar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:30%;
+    gap:20%;
 
 }
 .answar i {
     /* font-family: poppins , sans-serif; */
     font-size: .8vw;
     font-weight: 900;
+    text-align: right;
 }
 .section6_rightPart :nth-child(1){
     font-family: poppins, sans-serif;
+    font-size: 1.1vw;
 
 }
 .answar p{
     margin: 3% 0;
 }
 .section6_rightpart_boldtext{
-width: 60%;
+width: 70%;
 }
 
+/* SECTION 6 ENDS HERE  */
+/* SECTION 7 STYLING STARTS HERE  */
+.section7{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10%;
+    /* background-color: rgb(159, 159, 216); */
+   gap:17%;
+}
+.column{
+  
+    width: auto;
+}
+.comumn_Heading{
+    font-size: 1.5vw;
+}
+.colimn_items{
+    padding: 3%;
+}
+.icons{
+    display: flex;
+    gap: 5%;
+    margin-top: 10%;
+  
+   
+}
+.icons i{
+    text-align: center;
+    width: auto;
+    padding: 15px 15px;
+    background-color: aliceblue;
+    border-radius: 100px;
+   
 
+}
+.section7_icon:hover{
+    background-color: orange;
+    cursor: pointer;
+    color: #fff;
+}
+.section7_icon:active{
+    scale: .9;
+    transition: all ease ;
+}
 
 
 @media screen and (max-width: 1024px) {
@@ -783,6 +829,10 @@ width: 60%;
     }
 
     /* NAVBAR STYLING  */
+    .logo {
+        font-size: 33px;
+    }
+
     .listItems {
         font-size: 1.3vw;
     }
@@ -844,7 +894,10 @@ width: 60%;
     .Minutes {
         font-size: 1.5vw;
     }
-
+/* SECTION 2 STYLING ENDS HERE  */
+.presection {
+    font-size: 1.5rem;
+}
    
 
 
@@ -855,7 +908,15 @@ width: 60%;
         font-size: 1.3vw;
     }
 
+/* SECTION 6 STYLING STARTS HERE  */
+.section6{
+    margin-top: 26%;
+    height: auto;
+}
+.section6_rightPart :nth-child(1){
+    font-size: 1.5vw;
 
+}
 
 
 }
@@ -903,6 +964,13 @@ width: 60%;
 
     }
 
+
+
+    .preSection4Button{
+        font-size: 1.5vw;
+        padding:10px 10px ;
+    }
+
     /* SECTION 3 STYLING  */
     .section3 {
         grid-template-columns: auto auto;
@@ -930,6 +998,50 @@ width: 60%;
     .section3BoxRightBottomLeftPart p img {
         width: 7%;
     }
+
+    /* SECTION4 STYLING STARTS HERE  */
+    .section4{
+        display: block;
+        
+        /* margin-top: 30%; */
+    }
+    .section4LeftTextBottomLeftPart{
+        width: auto;
+    }
+    .section4LeftTextBottomLeftPart P{
+        padding: 10px 17px;
+        width: auto;
+       
+    }
+    .section4LeftTextSmallText {
+        font-size: 2vw;
+    }
+    .readPost {font-size: 2vw;
+    }
+    .section4RightPart{
+        height: 30vh;
+        width: 100%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 5%;
+        margin-top: 10%;
+    }
+   
+   
+    .section3BoxReadPost{
+        font-size: 2vw;
+    }
+    .section4LeftTextBottomPart{
+        justify-content: space-between;
+        
+        /* gap: 10%; */
+    }
+
+    /* SECTION 6 STYLINFG STARTS HERE  */
+    .section6{
+        margin-top: 50%;
+    }
+  
 
 }
 
@@ -1010,8 +1122,32 @@ width: 60%;
         font-size: .7rem;
     }
 
-    /* SECTION 3 STLING STARTS HERE  */
+/* SECTION 2 STYLING ENDS HERE  */
+.preSection4Button{
+    font-size: 1.5vw;
+    padding:10px 10px ;
+}
 
+.presection {
+    font-size: 1.3rem;
+}
+
+    /* SECTION 3 STLING STARTS HERE  */
+    .section3BoxReadPost{
+        font-size:2.5w ;
+    }
+
+    .section3BoxRightBottomLeftPart p{
+        font-size: 2vw;
+    }
+    .section3BoxRightBottomLeftPart p img{
+        width: 9%;
+    }
+    .section4LeftTextBottomLeftPart P{
+        padding: 10px 17px;
+        width: auto;
+       
+    }
 
 
 }
@@ -1021,6 +1157,10 @@ width: 60%;
     html {
         background-color: cornflowerblue;
     }
+    .presection {
+        font-size: 1rem;
+    }
+      
 
     .section3 {
         grid-template-columns: auto;
