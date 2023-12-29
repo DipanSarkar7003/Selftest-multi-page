@@ -709,7 +709,7 @@ body {
     border: none;
     padding-left: 5%;
     padding-bottom: 2%;
-    color: green;
+  
 
 }
 
@@ -717,8 +717,7 @@ body {
     font-size: 1vw;
     margin-bottom: 3%;
     margin-left: 5%;
-    color: green;
-    /* background-color: blue; */
+   
 
 
     /* color: #ab3c3c; */
@@ -794,7 +793,8 @@ width: 70%;
     font-size: 1.5vw;
 }
 .colimn_items{
-    padding: 3%;
+    padding: 3% 0%;
+    font-size: 1vw;
 }
 .icons{
     display: flex;
@@ -825,7 +825,7 @@ width: 70%;
 
 @media screen and (max-width: 1024px) {
     html {
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     /* NAVBAR STYLING  */
@@ -1040,11 +1040,79 @@ width: 70%;
     /* SECTION 6 STYLINFG STARTS HERE  */
     .section6{
         margin-top: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
+    .section6_leftPart{
+        margin-bottom: 10%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 50%;
+    }
+    .section6_leftPart_1stChild{
+        font-size: 3.5vw;
+    }
+   .section6_leftPart_2ndChild{
+    font-size: 2vw;
+   }
   
-
+  
+.section6_rightpart_boldtext {
+    font-size: 2.5;
 }
 
+.section6_rightPart :nth-child(1) {
+    font-size: 2vw;
+}
+.section6_rightPart {
+    width: 60%;}
+.answar i{
+    font-size: 1.5vw;
+}
+
+    /* SECTION 6 STYLING ENDS HERE  */
+    /* SECTION 7 STYLING STARTS HERE  */
+    .section7{
+        display: grid;
+        grid-template-rows: 1fr 1fr; /* Two rows with equal height */
+        grid-template-columns: 1fr; /* Single column for the first row */
+        grid-template-columns: repeat(3, 1fr); /* Three equal columns for the second row */
+        grid-gap: 10px;
+       
+    
+    }
+    .column{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    .icons{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+   
+    #column1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    .comumn_Heading{
+        font-size: 2.5vw;
+    }
+    .colimn_items{
+        font-size: 1.8vw; 
+        margin: 0;
+        padding: 2% 0%;
+    }
+}
 @media screen and (max-width:576px) {
     html {
         background-color: brown;
