@@ -924,7 +924,7 @@ width: 70%;
 
 @media screen and (max-width:770px) {
     html {
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
 
     }
 
@@ -1115,7 +1115,7 @@ width: 70%;
 }
 @media screen and (max-width:576px) {
     html {
-        background-color: brown;
+        /* background-color: brown; */
     }
 
     /* SECTION 1 STYLIG  */
@@ -1223,7 +1223,7 @@ width: 70%;
 
 @media screen and (max-width:480px) {
     html {
-        background-color: cornflowerblue;
+        /* background-color: cornflowerblue; */
     }
     .presection {
         font-size: 1rem;
