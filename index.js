@@ -60,11 +60,13 @@ function openHamburger (){
     if(deviceWidth<=770 ){
         console.log("everything is okk!")
        mobileMenu.style.display = 'flex'
+       hamBurger.style.opacity="0"
     }
 }
 
 mobileMenuCloseButton.addEventListener('click', ()=>{
     mobileMenu.style.display = 'none'
+    hamBurger.style.opacity="1"
 })
 
 

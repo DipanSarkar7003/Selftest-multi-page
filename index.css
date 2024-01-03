@@ -924,7 +924,7 @@ width: 70%;
 
 @media screen and (max-width:770px) {
     html {
-        background-color: blueviolet;
+        /* background-color: blueviolet; */
 
     }
 
@@ -1115,7 +1115,7 @@ width: 70%;
 }
 @media screen and (max-width:576px) {
     html {
-        background-color: brown;
+        /* background-color: brown; */
     }
 
     /* SECTION 1 STYLIG  */
@@ -1223,7 +1223,7 @@ width: 70%;
 
 @media screen and (max-width:480px) {
     html {
-        background-color: cornflowerblue;
+        /* background-color: cornflowerblue; */
     }
     .presection {
         font-size: 1rem;
@@ -1239,6 +1239,31 @@ width: 70%;
         gap: 2%;
         margin-bottom: 70%;
     }
+    .section6{
+        margin-top:83% ;
+    }
+    .section6_leftPart{
+        width: 70%;
+    }
+    .section6_rightPart{
+        width: 71%;
+    }
+    .section6_searchbar {
+        height: 2.2rem; 
+    }
+ 
+    .section6_searchbar img{
+     
+        padding: 9px;
+    }
+
+/* SECTION 6 STYLING ENDS HERE  */
+/* SECTION 7 STARTS HERE  */
+.icons i{
+    padding: 10px 10px;
+}
+
+
 
 }
 
